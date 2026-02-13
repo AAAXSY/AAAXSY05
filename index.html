@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <!-- 基础配置，避免编码和适配问题 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAAXSY03 - 纯文本网页</title>
-    <style>
+    <title>AAAXSY03 纯文本网页</title>
+    <!-- 所有样式都内联在<style>标签中，不依赖外部SCSS文件 -->
+    <style type="text/css">
+        /* 重置默认样式，避免浏览器自带样式干扰 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 页面主体样式 */
         body {
             margin: 40px;
-            font-family: "Microsoft YaHei", sans-serif;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
             font-size: 16px;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.8;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        /* 标题样式 */
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        /* 段落样式 */
+        p {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        /* 强调文本样式 */
+        strong {
+            color: #e74c3c;
+        }
+        em {
+            color: #9b59b6;
         }
     </style>
 </head>
 <body>
-    <h1>这是AAAXSY03仓库的文本网页</h1>
-    <p>你可以在这里修改任意文本内容，直接在GitHub上编辑即可。</p>
-    <p>比如添加新的段落、加粗文字 <strong>这是加粗的内容</strong>。</p>
+    <h1>AAAXSY03 仓库 - 纯文本网页</h1>
+    <p>这是修改后的纯文本内容，样式全部内联在页面中，不会触发Jekyll的SCSS错误。</p>
+    <p>支持 <strong>加粗文本</strong>、<em>斜体文本</em>，页面样式更美观。</p>
+    <p>你可以直接修改这里的文本内容，保存后即可正常部署。</p>
 </body>
 </html>
